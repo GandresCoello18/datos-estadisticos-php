@@ -1,0 +1,95 @@
+body{
+    background-color: rgba(245, 245, 245, 0.9);
+}
+#barra_mobie{
+    display: block;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    width: 100%;
+}
+.menu_vertical{
+    height: 100%;
+    max-width: 180px;
+    position: fixed;
+    left: 0px;
+    display: none;
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+}
+.menu_vertical ul{
+    padding: 0px !important;
+}
+.menu_vertical ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.menu_vertical #logo{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    display:  none;
+}
+.contenido-derecho{
+    position: relative;
+    left: 0px;
+}
+.contenido-derecho .fila_uno_diagrama{
+    background-color: #fff;
+}
+.contenido-derecho .fila_uno_diagrama a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenido-derecho .fila_dos_diagrama{
+    background-color: #fff;
+}
+.contenido-derecho .fila_dos_diagrama a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 544px){
+	/*body{
+		background-color: green;
+    }*/
+    .contenido-derecho{
+        left: 0px;
+    }
+}
+@media screen and (min-width: 768px){
+	/*body{
+		background-color: yellow;
+    }*/
+    .barra_mobie{
+        display: none;
+    }
+    .menu_vertical{
+        display: block;
+        z-index: 99;
+    }
+    .menu_vertical #logo{
+        display: block;
+    }
+    .contenido-derecho{
+        left: 80px;
+    }
+}
+@media screen and (min-width: 992px){
+	/*body{
+		background-color: orange;
+    }*/
+    .contenido-derecho{
+        left: 90px;
+    }
+}
+@media screen and (min-width: 1200px){
+	/*body{
+		background-color: lime;
+    }*/
+    .contenido-derecho{
+        left: 105px;
+    }
+}
